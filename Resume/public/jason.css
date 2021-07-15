@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.inn{
+    width: 700px;
+    height: 800px;
+    margin: 0px auto;
+}
+.inn h1{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.bord{
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+}
+.border{
+    width: 100%;
+    padding: 5px;
+    background-color:rgb(223, 224, 224);
+    border: 1px solid black;
+    font-weight: bold; 
+    font-size: 18px;
+    text-align: center;
+}
+ul{
+        font-size: 18px;
+        margin-left: 20px;
+}
+.cool{
+    text-align: right;
+    font-size: 18px;
+}
