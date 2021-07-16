@@ -13,11 +13,15 @@
     
         <input type="text" id="value1" name="v1" placeholder="Enter 1st value"><br><br>
         <input type="text" id="value2" name="v2" placeholder="Enter 2nd value"><br><br>
-        <input type="button" id="sum" value="Add" onclick="return fun1()">
-        <input type="button" id="mul" value="Multiply" onclick="return fun2()">
-        <input type="button" id="subs" value="Substract" onclick="return fun3()"><br><br>
+         
+        <input type="radio" id="sum" name ="operation" value="Add" >
+        <label for="sum">Sum</label>
+        <input type="radio" id="mul" name ="operation" value="Multiply" >
+        <label for="mul">Mul</label>
+        <input type="radio" id="subs" name ="operation" value="Substract" >
+        <label for="subs">Subs</label><br><br>
         <div class="centre">
-        <button type="submit" id="sub" value="submit">Submit</button>
+        <button type="radio" id="sub" value="submit" onclick="return fun1()"  >Submit</button>
         </div>
         <br><br> 
         <b>The result is</b>
