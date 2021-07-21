@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "celtofahrenn",
     "public": "public",
     "ignore": [
       "firebase.json",
