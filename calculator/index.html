@@ -11,22 +11,24 @@
 <body>
     <div class="math">
     
-        <input type="text" id="value1" name="v1" placeholder="Enter 1st value"><br><br>
-        <input type="text" id="value2" name="v2" placeholder="Enter 2nd value"><br><br>
+        <input type="text" id="value1"  placeholder="Enter 1st value"><br><br>
+        <input type="text" id="value2"  placeholder="Enter 2nd value"><br><br>
          
-        <input type="radio" id="sum" name ="operation" value="Add" >
-        <label for="sum">Sum</label>
-        <input type="radio" id="mul" name ="operation" value="Multiply" >
-        <label for="mul">Mul</label>
-        <input type="radio" id="subs" name ="operation" value="Substract" >
-        <label for="subs">Subs</label><br><br>
+        <input type="radio"  name ="operation" value="Add" onclick="return enabled()">
+        <label>Sum</label>
+        <input type="radio"  name ="operation" value="Multiply" onclick="return enabled()">
+        <label >Mul</label>
+        <input type="radio"  name ="operation" value="Substract" onclick="return enabled()">
+        <label >Subs</label><br><br>
         <div class="centre">
-        <button type="radio" id="sub" value="submit" onclick="return fun1()"  >Submit</button>
+        <button type="submit"  id="submitButton" disabled="true" onclick="return fun1()"  >Submit</button>
+        <button type="reset"   onclick="return clear1()">Clear</button>
         </div>
         <br><br> 
-        <b>The result is</b>
-        <span id="result"></span>
+        <b></b>
+        <span id="result"></span><br>
         
+             
     </div>
 </body>
 </html>
