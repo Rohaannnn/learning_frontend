@@ -1,5 +1,7 @@
 function fun1()
 {
+    if (validate()===false)
+    return false;
     var a=parseInt(document.getElementById("value1").value);
     var b=parseInt(document.getElementById("value2").value);
     
@@ -48,12 +50,13 @@ function clear1(){
  function enabled(){
 
      document.getElementById("submitButton").disabled=false ;  
-
-
-
-
-
-
-
-
+ }
+ function validate(){
+    const value1=document.getElementById("value1");
+    const value2=document.getElementById("value2");   
+    if (isNaN(value1.value) || isNaN(value2.value)){
+        alert("Invalid input")
+        return false;
+    }
+    
  }
